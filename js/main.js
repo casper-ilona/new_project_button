@@ -4,4 +4,4 @@ document.getElementById("di").innerHTML = h1;
 let c=20;
 let b=40;
 let t=(c*b);
-console.log("c*b"+t);
+console.log("c*b="+t);
