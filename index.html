@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>JavaScript Test</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,75 +24,80 @@
     </head>
 
     <body>
-        <div class="main">
-            <div id="di">
-
-            </div>
-        </div>
-        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
         <script>
-
-
-            document.getElementById("di").addEventListener("mouseout", mouseOut);
-
-            function mouseOut() {
-                document.getElementById("di").style.backgroundColor = "blue";
-            }
-            let x = 200;
-            let y = 200;
-            let delta = 30;
-            document.addEventListener("keydown", keyDown);
-
-            function keyDown(e) {
-                console.log(e.keyCode);
-
-                switch (e.keyCode) {
-                    case 37: {
-                        console.log("влево");
-                        moveLeft();
-                        break;
-                    }
-                    case 38: {
-                        console.log("вверх");
-                        moveUp();
-                        break;
-                    }
-                    case  39: {
-                        console.log("вправо");
-                        moveRight();
-                        break;
-                    }
-                    case 40: {
-                        console.log("вниз");
-                        moveDown();
-                        break;
-                    }
-                }
-                document.getElementById("di").style.left = x + "px";
-                //здесь применяется к хтмл элементу
-                document.getElementById("di").style.top = y + "px";
-
-            }
-
-            function moveLeft() {
-                x = x - delta;
-            }
-
-            //изменяется значения переменной x или y
-
-            function moveRight() {
-                x = x + delta;
-            }
-
-            function moveUp() {
-                y = y - delta;
-            }
-
-            function moveDown() {
-                y = y + delta;
-            }
+            alert("Test 1");
         </script>
+
+
+        <!--        <div class="main">-->
+        <!--            <div id="di">-->
+
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <script src="js/vendor/modernizr-3.11.2.min.js"></script>-->
+        <!--        <script src="js/plugins.js"></script>-->
+        <!--        <script src="js/main.js"></script>-->
+        <!--        <script>-->
+
+
+        <!--            document.getElementById("di").addEventListener("mouseout", mouseOut);-->
+
+        <!--            function mouseOut() {-->
+        <!--                document.getElementById("di").style.backgroundColor = "blue";-->
+        <!--            }-->
+        <!--            let x = 200;-->
+        <!--            let y = 200;-->
+        <!--            let delta = 30;-->
+        <!--            document.addEventListener("keydown", keyDown);-->
+
+        <!--            function keyDown(e) {-->
+        <!--                console.log(e.keyCode);-->
+
+        <!--                switch (e.keyCode) {-->
+        <!--                    case 37: {-->
+        <!--                        console.log("влево");-->
+        <!--                        moveLeft();-->
+        <!--                        break;-->
+        <!--                    }-->
+        <!--                    case 38: {-->
+        <!--                        console.log("вверх");-->
+        <!--                        moveUp();-->
+        <!--                        break;-->
+        <!--                    }-->
+        <!--                    case  39: {-->
+        <!--                        console.log("вправо");-->
+        <!--                        moveRight();-->
+        <!--                        break;-->
+        <!--                    }-->
+        <!--                    case 40: {-->
+        <!--                        console.log("вниз");-->
+        <!--                        moveDown();-->
+        <!--                        break;-->
+        <!--                    }-->
+        <!--                }-->
+        <!--                document.getElementById("di").style.left = x + "px";-->
+        <!--                //здесь применяется к хтмл элементу-->
+        <!--                document.getElementById("di").style.top = y + "px";-->
+
+        <!--            }-->
+
+        <!--            function moveLeft() {-->
+        <!--                x = x - delta;-->
+        <!--            }-->
+
+        <!--            //изменяется значения переменной x или y-->
+
+        <!--            function moveRight() {-->
+        <!--                x = x + delta;-->
+        <!--            }-->
+
+        <!--            function moveUp() {-->
+        <!--                y = y - delta;-->
+        <!--            }-->
+
+        <!--            function moveDown() {-->
+        <!--                y = y + delta;-->
+        <!--            }-->
+        <!--        </script>-->
     </body>
 </html>
